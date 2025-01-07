@@ -1,0 +1,24 @@
+.controls {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    color: black;
+  }
+  
+  .button.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .button:hover {
+    background-color: #e0e0e0;
+  }
