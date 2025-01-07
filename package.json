@@ -1,6 +1,6 @@
 {
-  "name": "email-app",
   "homepage": "https://github.com/ArtemZhuravkov/email-app",
+  "name": "email-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
