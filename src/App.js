@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/register" element={<RegistrationForm />} />
         <Route path="/login" element={<AuthorizationForm />} />
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/send-email" element={<SendEmail />} />
       </Routes>
     </Router>
