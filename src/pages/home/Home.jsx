@@ -44,11 +44,12 @@ export function Home() {
         };
 
         const savedUser = JSON.parse(localStorage.getItem('user'));
-        if (savedUser) setUser(savedUser);
-        else navigate('/login');
+        if (savedUser) {
+            setUser(savedUser);
+            const basicAuth = btoa(`${savedUser.login}:${savedUser.password}`);
+            fetchEmails(`${process.env.REACT_APP_API_BASE_URL}/emails/`, basicAuth)
+        } else { navigate('/login') };
 
-        const basicAuth = btoa(`${savedUser.login}:${savedUser.password}`);
-        fetchEmails(`${process.env.REACT_APP_API_BASE_URL}/emails/`, basicAuth)
     }, [navigate]);
 
 
